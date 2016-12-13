@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		The rain in Spain falls lightly on the Train
+	</title>
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="http://bootswatch.com/darkly/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron">
+		<h1>Train Schedule</h1>
+		<h3>Please see a list of current train times below</h3>
+	</div>
+	<div class="panel panel-info">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Current Trains</h3>
+  		</div>
+  		<div class="panel-body">
+  		<table class="table table-striped table-hover" id="trains">
+  			<thead>
+    			<tr>
+	  				<th>Train Name</th>
+	  				<th>Destination</th>
+	  				<th>Frequency</th>
+	  				<th>Next Arrival</th>
+	  				<th>Minutes Away</th>
+  				</tr>
+			</thead>
+    	</table>
+  		</div>
+  	</div>
+  	<div class="panel panel-info">
+  		<div class="panel-heading">
+    		<h3 class="panel-title">Add a Train</h3>
+  		</div>
+  			<div class="panel-body">
+				<label>Train Name</label><br />
+				<input id="name"><br />
+				<label>Destination</label><br />
+				<input id="destination"><br />
+				<label>First Train Time (HH:mm military time)</label><br />
+				<input id="time"><br />
+				<label>Frequency (min)</label><br />
+				<input id="frequency"><br />
+				<button class="btn btn-info" id="submit">Submit</button>
+  			</div>
+	</div>
+</div>
+</body>
+</html>

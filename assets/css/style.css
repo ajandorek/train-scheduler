@@ -1,0 +1,19 @@
+table {
+	text-align: center;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	padding-top: 10px;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+#submit {
+	margin-top: 10px;
+}
